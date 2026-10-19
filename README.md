@@ -416,6 +416,20 @@ python demo.py --prompt your_voice.wav --text "您的订单编号是202609181234
 ```
 </details>
 
+<details>
+<summary><a href="https://huggingface.co/Thanushttk/pocket-tts-multilingual">Pocket TTS Multilingual</a> by <a href="https://huggingface.co/Thanushttk">Thanush Thankachan</a>, 6 layers</summary>
+
+English, Hindi, Marathi, Kannada, Tamil, Malayalam, and Telugu, including code mixing. Use an Indian voice for a better Indian accent.
+
+```bash
+uvx pocket-tts generate \
+  --config hf://Thanushttk/pocket-tts-multilingual/config.yaml@80c7f2835138c62750d76a93d4333c5c5bb6a754 \
+  --voice my_voice.wav \
+  --text "Hello, नमस्ते, how are you?"
+```
+</details>
+
+
 Want your model here? Head to the [training Readme](https://github.com/kyutai-labs/pocket-tts/blob/main/training/README.md) to get started!
 
 ## Projects using Pocket TTS
